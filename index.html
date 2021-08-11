@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primero reto del JS challenge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <p>Primer reto del JS Challenge</p>
+    </header>
+    <main>
+      <form>
+        <label for="peliculas">
+          <input
+            id="peliculas"
+            type="number"
+            placeholder="¿Cuántas películas verás?"
+          />
+        </label>
+        <button type="button" onclick="calcular()">Calcular</button>
+      </form>
+      <form>
+        <p>Selecciona los servicios de streaming que quieres contratar</p>
+        <ul>
+          <li>
+            <label for="netflix"
+              ><input
+                type="checkbox"
+                name="plataformas"
+                id="netflix"
+                value="17000"
+              />Netflix</label
+            >
+          </li>
+          <li>
+            <label for="amazon"
+              ><input
+                type="checkbox"
+                name="plataformas"
+                id="amazon"
+                value="15000"
+              />Amazon prime</label
+            >
+          </li>
+          <li>
+            <label for="disney"
+              ><input
+                type="checkbox"
+                name="plataformas"
+                id="disney"
+                value="24000"
+              />Disney +</label
+            >
+          </li>
+          <li>
+            <label for="hbo"
+              ><input
+                type="checkbox"
+                name="plataformas"
+                id="hbo"
+                value="20000"
+              />HBO</label
+            >
+          </li>
+        </ul>
+      </form>
+    </main>
+    <footer>
+      <p class="copyright">Hecho por Mauricio Rojas</p>
+      <p>
+        Repositorio de
+        <a href="https://github.com/mauriciorojasnova/precios-peliculas"
+          >Github</a
+        >
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

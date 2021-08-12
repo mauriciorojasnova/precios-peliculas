@@ -8,69 +8,89 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <p>Primer reto del JS Challenge</p>
+    <header class="header">
+      <p>JavaScript Challenge</p>
     </header>
     <main>
-      <form>
-        <label for="peliculas">
-          <input
-            id="peliculas"
-            type="number"
-            placeholder="¿Cuántas películas verás?"
-          />
-        </label>
-        <button type="button" onclick="calcular()">Calcular</button>
-      </form>
-      <form>
+      <section class="explicacion-container">
+        <h2 class="explicacion-container__titulo">
+          Comparador de precios de películas
+        </h2>
+        <p class="explicacion-container__parrafo">
+          Ingresa la cantidad de películas que deseas ver en este mes. Luego
+          selecciona los servicios de streaming que te gustaría contratar.
+          Finalmente te daremos una recomendación diciendo si es más económico
+          ir a cine o adquirir dichos servicios.
+        </p>
+      </section>
+      <section class="peliculas-container">
+        <h3 class="peliculas-container__titulo">Cantidad de películas</h3>
+        <form>
+          <label for="peliculas">
+            Ingresa el número de películas que quieres ver.
+            <input
+              class="peliculas-container__numero"
+              id="peliculas"
+              type="number"
+              placeholder="¿Cuántas películas verás?"
+            />
+          </label>
+        </form>
+      </section>
+      <section class="streaming-container">
+        <h3>Servicios de streaming</h3>
         <p>Selecciona los servicios de streaming que quieres contratar</p>
-        <ul>
-          <li>
-            <label for="netflix"
-              ><input
-                type="checkbox"
-                name="plataformas"
-                id="netflix"
-                value="17000"
-              />Netflix</label
-            >
-          </li>
-          <li>
-            <label for="amazon"
-              ><input
-                type="checkbox"
-                name="plataformas"
-                id="amazon"
-                value="15000"
-              />Amazon prime</label
-            >
-          </li>
-          <li>
-            <label for="disney"
-              ><input
-                type="checkbox"
-                name="plataformas"
-                id="disney"
-                value="24000"
-              />Disney +</label
-            >
-          </li>
-          <li>
-            <label for="hbo"
-              ><input
-                type="checkbox"
-                name="plataformas"
-                id="hbo"
-                value="20000"
-              />HBO</label
-            >
-          </li>
-        </ul>
-      </form>
+        <form class="streaming-container__servicios">
+          <label for="netflix"
+            ><input
+              type="checkbox"
+              class="plataformas"
+              name="plataformas"
+              id="netflix"
+              value="17000"
+            />Netflix</label
+          >
+
+          <label for="amazon"
+            ><input
+              type="checkbox"
+              class="plataformas"
+              name="plataformas"
+              id="amazon"
+              value="15000"
+            />Amazon prime</label
+          >
+
+          <label for="disney"
+            ><input
+              type="checkbox"
+              class="plataformas"
+              name="plataformas"
+              id="disney"
+              value="24000"
+            />Disney +</label
+          >
+
+          <label for="hbo"
+            ><input
+              type="checkbox"
+              class="plataformas"
+              name="plataformas"
+              id="hbo"
+              value="20000"
+            />HBO</label
+          >
+        </form>
+        <button type="button" onclick="compararPrecios()">Calcular</button>
+      </section>
+      <section class="recomendacion-container">
+        <h2>Recomendación</h2>
+        <p id="mensajeRecomendacion"></p>
+      </section>
     </main>
     <footer>
       <p class="copyright">Hecho por Mauricio Rojas</p>
-      <p>
+      <p class="repositorio">
         Repositorio de
         <a href="https://github.com/mauriciorojasnova/precios-peliculas"
           >Github</a

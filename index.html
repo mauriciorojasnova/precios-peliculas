@@ -9,6 +9,7 @@
   </head>
   <body>
     <header class="header">
+      <img src="imgs/platzi.svg" />
       <p>JavaScript Challenge</p>
     </header>
     <main>
@@ -26,7 +27,7 @@
       <section class="peliculas-container">
         <h3 class="peliculas-container__titulo">Cantidad de películas</h3>
         <form>
-          <label for="peliculas">
+          <label for="peliculas" class="peliculas-container__descripcion">
             Ingresa el número de películas que quieres ver.
             <input
               class="peliculas-container__numero"
@@ -38,8 +39,10 @@
         </form>
       </section>
       <section class="streaming-container">
-        <h3>Servicios de streaming</h3>
-        <p>Selecciona los servicios de streaming que quieres contratar</p>
+        <h3 class="streaming-container__titulo">Servicios de streaming</h3>
+        <p class="streaming-container__parrafo">
+          Selecciona los servicios de streaming que quieres contratar
+        </p>
         <form class="streaming-container__servicios">
           <label for="netflix"
             ><input
@@ -84,18 +87,19 @@
         <button type="button" onclick="compararPrecios()">Calcular</button>
       </section>
       <section class="recomendacion-container">
-        <h2>Recomendación</h2>
-        <p id="mensajeRecomendacion"></p>
+        <h2 class="recomendacion-container__titulo">Recomendación</h2>
+        <p
+          class="recomendacion-container__parrafo"
+          id="mensajeRecomendacion"
+        ></p>
       </section>
     </main>
     <footer>
       <p class="copyright">Hecho por Mauricio Rojas</p>
-      <p class="repositorio">
-        Repositorio de
-        <a href="https://github.com/mauriciorojasnova/precios-peliculas"
-          >Github</a
-        >
-      </p>
+
+      <a href="https://github.com/mauriciorojasnova/precios-peliculas"
+        >Github</a
+      >
     </footer>
     <script src="index.js"></script>
   </body>
